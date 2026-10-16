@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits = ["banana", "apple", "orange", "mango"];
+        document.write("처음 배열 : " + fruits + "<br>")
+        fruits.push("grape");
+        document.write("push() 후 " + fruits + "<br>")
+        fruits.pop();
+        document.write("pop() 후 " + fruits + "<br>")
+        fruits.sort();
+        document.write("sort() 후 " + fruits + "<br>")
+        fruits.reverse();
+        document.write("reverse() 후 " + fruits + "<br>")
+        fruits.slice(1,3);
+        document.write("slice(1:3) 후 " + fruits + "<br>")
+        fruits.splice(1,1,"melon");
+        document.write("splice(1,1,'melon') 후 " + fruits + "<br>")
+    </script>
+</body>
+</html>

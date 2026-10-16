@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+        table, td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+        table {
+            width: 200px;
+            margin: 0 auto;
+        }
+        td {
+            text-align: left;
+            padding: 10px 0 10px 20px;
+        }
+        table tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>건강에 좋은 식품들</h1>
+        <table id="foodtable"></table>
+    </div>
+    <script>
+        const foods = [
+            "블루베리", "귀리", "토마토", "시금치", "적포도주",
+            "견과류",
+        ];
+        const table = document.querySelector('#foodtable');
+
+        foods.forEach(food => {
+            let tr = document.createElement('tr');
+            let td = document.createElement('td');
+            td.textContent = food;
+            tr.appendChild(td);
+            table.appendChild(tr);
+        });
+    </script>
+</body>
+</html>
